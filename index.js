@@ -1,10 +1,52 @@
-/* Data Types:
-undefined, null, boolean, string, symbol, number and object
+/* 
+    Data Types:
+    undefined, null, boolean, string, symbol, number and object
 */
 
-var myName = 'Raul'
-myName = 8
-let ourName = 'freeCodeCamp'
-const pi = 3.14
+function dataType () {
+    var myName = 'Raul'
+    myName = 8
+    let ourName = 'freeCodeCamp'
+    const pi = 3.14
 
-console.log(myName, ourName, pi);
+    console.log(myName, ourName, pi);
+}
+dataType()
+
+/* 
+    Storing values with Assignment Operator
+*/
+function storingValues () {
+    var a
+    var b = 2
+
+    console.log('first a:', a)
+
+    a = 7
+    console.log('second a:', a)
+
+    b = a
+
+    console.log('b is equal to a', b)
+}
+storingValues()
+
+/* 
+    Unitialized variables
+*/
+function unitializedVariables () {
+    // Initialize values
+    var a = 5
+    var b = 10
+    var c = "I'm a"
+
+    // Operations (Do not change)
+    a = a + 1
+    b = b + 5
+    c = c + " String"
+
+    console.log('the new value of a:', a)
+    console.log('the new value of b:', b)
+    console.log('the new value of c:', c)
+}
+unitializedVariables()
