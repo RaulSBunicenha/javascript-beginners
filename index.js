@@ -117,4 +117,38 @@ function bracketNotation () {
     myString[2] = 's'
     console.log(`New String:`, myString)
 }
-bracketNotation()
+
+/*
+    Change Array (push, pop, shift, unshift)
+*/
+function changeArray () {
+    let myArray = [1,2,3,4]
+    console.log('Original Array', myArray)
+
+    // push
+    myArray.push(5)
+    console.log(`Adding a value in the last position: `, myArray)
+
+    console.log('')
+
+    // pop
+    const popedValue = myArray.pop()
+    console.log(`Removing the last position, and return it`)
+    console.log(`The last position value:`, popedValue)
+    console.log(`The array:`, myArray)
+
+    console.log('')
+
+    // Shift
+    const shiftedValue = myArray.shift()
+    console.log(`Removing the first position, and return it`)
+    console.log(`The first position value:`, shiftedValue)
+    console.log(`The array`, myArray)
+
+    console.log('')
+
+    // Unshift
+    myArray.unshift(1)
+    console.log(`Adding a value in the fist position: `, myArray)
+}
+changeArray()
