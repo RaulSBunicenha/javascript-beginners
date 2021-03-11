@@ -62,16 +62,25 @@ function remainderOperator () {
 }
 
 /*
-    Augmented Multiplication
+    Augmented Operations
 */
-function augmentedMultiplication () {
+function augmentedOperations () {
     // Define
     var a = 3
+    b = 5
+    c = 2
+    d = 10
     
     // Operations
+    c += 3
+    b -= 5
     a *= 3
+    d /= 2
 
     // Show results
-    console.log('The a value is:', a)
+    console.log('The "a" value is:', a)
+    console.log('The "b" value is:', b)
+    console.log('The "c" value is:', c)
+    console.log('The "d" value is:', d)
 }
-augmentedMultiplication()
+augmentedOperations()
