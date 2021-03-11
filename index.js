@@ -100,4 +100,14 @@ function escapeSequences () {
 
     console.log(stringSequence)
 }
-escapeSequences()
+
+/*
+    String bracket notation
+*/
+function bracketNotation () {
+    let myString = 'Raul Bunicenha'
+    
+    console.log('String Length:', myString.length)
+    console.log('String Third Letter:', myString[2])
+}
+bracketNotation()
