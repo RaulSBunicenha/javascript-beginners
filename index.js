@@ -105,9 +105,16 @@ function escapeSequences () {
     String bracket notation
 */
 function bracketNotation () {
-    let myString = 'Raul Bunicenha'
+    let myString = 'RaulBunicenha'
     
     console.log('String Length:', myString.length)
     console.log('String Third Letter:', myString[2])
+
+    // Get the second last letter
+    console.log('Second Last Letter:', myString[myString.length - 2])
+
+    // This will not work, because of immutability of string
+    myString[2] = 's'
+    console.log(`New String:`, myString)
 }
 bracketNotation()
