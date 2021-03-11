@@ -151,4 +151,24 @@ function changeArray () {
     myArray.unshift(1)
     console.log(`Adding a value in the fist position: `, myArray)
 }
-changeArray()
+
+/*
+    Change Array Inside a Function
+*/
+function changeArrayInseide () {
+    function nextInLine (arr, item) {
+        arr.push(item)
+        return arr.shift()
+    }
+
+    function doIt () {
+        let myArray = [1, 2, 3, 4, 5]
+
+        console.log('Before:', myArray)
+        console.log('Next In Line:', nextInLine(myArray, 6))
+        console.log('After:', myArray)
+    }
+    doIt()
+}
+changeArrayInseide()
+
