@@ -157,6 +157,8 @@ function changeArray () {
 */
 function changeArrayInseide () {
     function nextInLine (arr, item) {
+        // arr = arr.map(e => e) // Functional Programimg
+
         arr.push(item)
         return arr.shift()
     }
