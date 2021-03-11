@@ -83,4 +83,21 @@ function augmentedOperations () {
     console.log('The "c" value is:', c)
     console.log('The "d" value is:', d)
 }
-augmentedOperations()
+
+/*
+    String Escpape sequences
+    \'  single quotes
+    \"  double quotes
+    \\  backslash
+    \n  new line
+    \r  carriage return
+    \t  tab
+    \b  backspace
+    \f  form feed
+*/
+function escapeSequences () {
+    let stringSequence = "FirstLine\n\t\\SecondLine\nThirdLine"
+
+    console.log(stringSequence)
+}
+escapeSequences()
