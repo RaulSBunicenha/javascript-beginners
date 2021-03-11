@@ -11,7 +11,6 @@ function dataType () {
 
     console.log(myName, ourName, pi);
 }
-dataType()
 
 /* 
     Storing values with Assignment Operator
@@ -29,7 +28,6 @@ function storingValues () {
 
     console.log('b is equal to a', b)
 }
-storingValues()
 
 /* 
     Unitialized variables
@@ -49,4 +47,31 @@ function unitializedVariables () {
     console.log('the new value of b:', b)
     console.log('the new value of c:', c)
 }
-unitializedVariables()
+
+/* 
+    Remainder Operator
+*/
+function remainderOperator () {
+    // Initialize values
+    var remainder
+
+    // Operations (Do not change)
+    remainder = 11 % 3
+    
+    console.log('the value of remainder:', remainder)
+}
+
+/*
+    Augmented Multiplication
+*/
+function augmentedMultiplication () {
+    // Define
+    var a = 3
+    
+    // Operations
+    a *= 3
+
+    // Show results
+    console.log('The a value is:', a)
+}
+augmentedMultiplication()
