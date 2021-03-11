@@ -172,5 +172,4 @@ function changeArrayInseide () {
     }
     doIt()
 }
-changeArrayInseide()
 
