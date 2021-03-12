@@ -218,4 +218,28 @@ function objectLookup (key) {
     if (!myObject.hasOwnProperty(key)) return 'wrong key'
     return myObject[key]
 }
-console.log(objectLookup('key7'))
+
+/*
+    Random Fractions
+*/
+
+function randomFraction () {
+    return Math.random()
+}
+
+/*
+    Random Whole Number
+*/
+function randomWholeNumber (max = 0) {
+    return Math.random() * max
+}
+
+/*
+    Random Whole Number With a Range
+*/
+function randomNumberWithRange(start = 0, end = 0) {
+    // Math.floor return the greatest integer
+    return Math.floor(Math.random() * (end - start + 1)) + start
+}
+console.log(randomNumberWithRange(5, 20))
+
