@@ -173,3 +173,23 @@ function changeArrayInseide () {
     doIt()
 }
 
+/*
+  Identical Options in Switch  
+*/
+function identicalSwitch (switchTest) {
+    let result
+
+    switch (switchTest) {
+        case 1:
+        case 2:
+        case 3:
+            result = 'done'
+            break
+        default:
+            result = 'wrong'
+            break
+    }
+
+    return result
+}
+console.log(identicalSwitch(0))
