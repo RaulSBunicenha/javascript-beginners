@@ -248,6 +248,11 @@ function randomNumberWithRange(start = 0, end = 0) {
 function checkIntRdix (stringNumber, numberType) {
     return parseInt(stringNumber, numberType)
 }
-console.log(checkIntRdix("FAFAFA", 16))
-console.log(checkIntRdix("10010", 2))
 
+/**
+ *  Multiple Ternary Operators 
+ */
+function multipleTernaryOperators (number) {
+    return number < 0 ? 'negative' : number > 9 ? 'decimal-plus' : 'decimal'
+}
+console.log(multipleTernaryOperators(10))
