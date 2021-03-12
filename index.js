@@ -214,6 +214,8 @@ function objectLookup (key) {
             return 'The value is a function which returns 0'
         }
     }
+    
+    if (!myObject.hasOwnProperty(key)) return 'wrong key'
     return myObject[key]
 }
-console.log(objectLookup('key5')())
+console.log(objectLookup('key7'))
