@@ -192,4 +192,12 @@ function identicalSwitch (switchTest) {
 
     return result
 }
-console.log(identicalSwitch(0))
+
+/*
+    Return Early Pattern for Functions
+*/
+function earlyPatternFunctions (a, b) {
+    if (b === 0) return undefined
+    return a / b
+}
+console.log(earlyPatternFunctions(2, 0))
