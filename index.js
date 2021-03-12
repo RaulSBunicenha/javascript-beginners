@@ -241,5 +241,13 @@ function randomNumberWithRange(start = 0, end = 0) {
     // Math.floor return the greatest integer
     return Math.floor(Math.random() * (end - start + 1)) + start
 }
-console.log(randomNumberWithRange(5, 20))
+
+/*
+    Parse Int With Rdix (Binary and Others)
+*/
+function checkIntRdix (stringNumber, numberType) {
+    return parseInt(stringNumber, numberType)
+}
+console.log(checkIntRdix("FAFAFA", 16))
+console.log(checkIntRdix("10010", 2))
 
