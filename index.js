@@ -200,4 +200,20 @@ function earlyPatternFunctions (a, b) {
     if (b === 0) return undefined
     return a / b
 }
-console.log(earlyPatternFunctions(2, 0))
+
+/*
+    Objects for Lookups
+*/
+function objectLookup (key) {
+    const myObject = {
+        key1: 'The value is 1',
+        key2: 'The value is 2',
+        key3: 'The value is 3',
+        key4: 'The value is 4',
+        key5: function () {
+            return 'The value is a function which returns 0'
+        }
+    }
+    return myObject[key]
+}
+console.log(objectLookup('key5')())
