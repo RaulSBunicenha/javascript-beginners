@@ -269,4 +269,21 @@ function checkScope () {
     console.log('function scope `i` is:', i)
     return i
 }
-checkScope()
+
+/*
+    Prevent Object Mutation with Object.freeze
+*/
+function preventObjectMutation () {
+    const MATH_CONSTANTS = Object.freeze({
+        PI: 3.14
+    })
+
+    try {
+        MATH_CONSTANTS.PI = 39
+    } catch (e) {
+        console.log(e)
+    }
+
+    return MATH_CONSTANTS.PI
+}
+console.log(preventObjectMutation())
