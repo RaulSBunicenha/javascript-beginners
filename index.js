@@ -325,8 +325,9 @@ function destructuringObjects () {
         internalObject: { x: 99 }
     }
 
+    const { internalObject: { x } } = myObject
     const { internalObject: { x: a } } = myObject
 
-    console.log(a)
+    console.log(x, a)
 })()
 
