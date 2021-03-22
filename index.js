@@ -320,7 +320,7 @@ function destructuringObjects () {
 /*
    Destructuring Assignment: Nested Objects
 */
-(function () {
+function destructuringNestedObjects () {
     const myObject = {
         internalObject: { x: 99 }
     }
@@ -329,5 +329,17 @@ function destructuringObjects () {
     const { internalObject: { x: a } } = myObject
 
     console.log(x, a)
-})()
+}
 
+/*
+    class Syntax
+*/
+function classSyntax () {
+    let myFunction = function (parameter) {
+        this.parameter = parameter
+    }
+
+    let object = new myFunction('My String')
+
+    console.log(object)
+}
