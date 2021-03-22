@@ -343,3 +343,32 @@ function classSyntax () {
 
     console.log(object)
 }
+
+/**
+ * Getters And Setters
+ */
+
+function gettersAndSetters () {
+    class Book {
+        constructor (author = null) {
+            this._author = author
+        }
+
+        get writer () {
+            return this._author
+        }
+
+        set writer (updatedAuthor) {
+            this._author = updatedAuthor
+        }
+    }
+
+    let myBook = new Book('Test')
+    console.log(myBook)
+    console.log('writer', myBook.writer)
+
+    myBook.writer = 'Raul'
+    console.log(myBook)
+    console.log('writer', myBook.writer)
+}
+gettersAndSetters()
