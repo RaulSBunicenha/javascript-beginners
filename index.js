@@ -318,7 +318,7 @@ function destructuringObjects () {
 }
 
 /*
-    Nested Objects
+   Destructuring Assignment: Nested Objects
 */
 (function () {
     const myObject = {
