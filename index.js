@@ -304,7 +304,7 @@ function defaultParameters ( ) {
 /*
     Destructuring Assignment: Objects
 */
-(function destructuringObjects () {
+function destructuringObjects () {
     let voxel = { x: 1, y: 2, z: 3 }
 
     const { x: a, y: b, z: c} = voxel
@@ -315,4 +315,18 @@ function defaultParameters ( ) {
         return a
     }
     console.log('function', paramReceive(voxel))
+}
+
+/*
+    Nested Objects
+*/
+(function () {
+    const myObject = {
+        internalObject: { x: 99 }
+    }
+
+    const { internalObject: { x: a } } = myObject
+
+    console.log(a)
 })()
+
