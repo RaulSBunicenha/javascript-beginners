@@ -300,4 +300,19 @@ function defaultParameters ( ) {
 
     console.log(increment(2, 3))
 }
-defaultParameters()
+
+/*
+    Destructuring Assignment: Objects
+*/
+(function destructuringObjects () {
+    let voxel = { x: 1, y: 2, z: 3 }
+
+    const { x: a, y: b, z: c} = voxel
+
+    console.log('variables:', a, b, c)
+
+    function paramReceive ({ x: a }) {
+        return a
+    }
+    console.log('function', paramReceive(voxel))
+})()
