@@ -286,4 +286,18 @@ function preventObjectMutation () {
 
     return MATH_CONSTANTS.PI
 }
-console.log(preventObjectMutation())
+/*
+* Default Parameters
+*/
+function defaultParameters ( ) {
+    'use strict'
+    const increment = (function (value) {
+        console.log(value)
+        return function increment (number, value) {
+            return number + value
+        }
+    })(3)
+
+    console.log(increment(2, 3))
+}
+defaultParameters()
