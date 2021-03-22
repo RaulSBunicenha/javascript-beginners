@@ -255,4 +255,18 @@ function checkIntRdix (stringNumber, numberType) {
 function multipleTernaryOperators (number) {
     return number < 0 ? 'negative' : number > 9 ? 'decimal-plus' : 'decimal'
 }
-console.log(multipleTernaryOperators(10))
+/*
+    Var and Let Scopes
+*/
+function checkScope () {
+    // let i = 'function scope'
+    var i = 'function scope'
+    if (true) {
+        // var i = 'block scope'
+        let i = 'block scope'
+        console.log('block scope `i` is:', i)
+    }
+    console.log('function scope `i` is:', i)
+    return i
+}
+checkScope()
